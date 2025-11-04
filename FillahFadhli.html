@@ -1,0 +1,1763 @@
+maps<!DOCTYPE html>
+<html lang="id">
+
+<!-- Mirrored from sarotansidoarjo.com/welcome.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Nov 2025 13:16:29 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO KU - fillah fadhli</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Hide all scrollbars */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        * {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: #1a1a1a;
+            color: white;
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .nav-links a {
+            color: #999;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .nav-links a.active,
+        .nav-links a:hover {
+            color: white;
+            background: #333;
+        }
+
+        .cta-button {
+            background: #3366ff;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #2952cc;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section - BERANDA */
+        .hero {
+            background: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 2rem 80px;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .hero-content .highlight {
+            color: #3366ff;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #999;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: #3366ff;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: #2952cc;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #333;
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-image {
+            background: #333;
+            border-radius: 20px;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: rgba(51, 51, 51, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1rem;
+            border: 1px solid #444;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .services-card {
+            top: -20px;
+            right: -50px;
+            width: 200px;
+        }
+
+        .trusted-card {
+            bottom: -30px;
+            left: -40px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .trusted-avatars {
+            display: flex;
+            gap: -10px;
+            margin-bottom: 0.5rem;
+            justify-content: center;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #3366ff;
+            border: 2px solid #1a1a1a;
+            margin-left: -8px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Services Section - LAYANAN */
+        .services-section {
+            background: #1a1a1a;
+            padding: 80px 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+        }
+
+        .services-content {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .services-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .services-content p {
+            color: #999;
+            margin-bottom: 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            justify-items: center;
+        }
+
+        .service-item {
+            background: #222;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 4px solid #3366ff;
+            transition: transform 0.3s ease;
+            text-align: center;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            user-select: none;
+        }
+
+        .service-item h3 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-item p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .stats-box {
+            background: white;
+            color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #3366ff;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .services-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .laptop-mockup {
+            background: #333;
+            border-radius: 20px;
+            width: 400px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            position: relative;
+        }
+
+        /* Portfolio Section - PRODUK */
+        .portfolio-section {
+            background: #1a1a1a;
+            padding: 80px 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .portfolio-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+        }
+
+        .portfolio-container h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .portfolio-container p {
+            color: #999;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            justify-items: center;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .portfolio-item {
+            background: #222;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            min-height: 300px;
+            width: 100%;
+            max-width: 580px;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-content {
+            padding: 2rem;
+            text-align: left;
+        }
+
+        .portfolio-tag {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-description {
+            color: #999;
+            margin-bottom: 1.5rem;
+        }
+
+        .portfolio-link {
+            color: #3366ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .portfolio-image {
+            background: #333;
+            height: 200px;
+            margin: 1rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        /* Location Section - LOKASI */
+        .location-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+            padding: 80px 2rem;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .location-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="location-dots" patternUnits="userSpaceOnUse" width="30" height="30"><circle cx="15" cy="15" r="1" fill="rgba(51,102,255,0.1)"><animate attributeName="r" values="1;2;1" dur="4s" repeatCount="indefinite"/></circle></pattern></defs><rect width="100%" height="100%" fill="url(%23location-dots)"/></svg>');
+            opacity: 0.4;
+        }
+
+        .location-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .location-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .location-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .location-header p {
+            color: #999;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            justify-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .location-info {
+            background: rgba(51, 51, 51, 0.3);
+            padding: 3rem;
+            border-radius: 25px;
+            border: 1px solid rgba(51, 102, 255, 0.2);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 580px;
+            text-align: center;
+        }
+
+        .location-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(51, 102, 255, 0.05), transparent);
+            pointer-events: none;
+        }
+
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(51, 102, 255, 0.2);
+            color: #3366ff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(51, 102, 255, 0.3);
+            user-select: none;
+        }
+
+        .location-title {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .address-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 20px;
+            border-left: 4px solid #3366ff;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            cursor: default;
+            text-align: center;
+        }
+
+        .address-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .address-main {
+            font-size: 1.2rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .address-detail {
+            color: #999;
+            line-height: 1.6;
+        }
+
+        .location-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-items: center;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem;
+            background: rgba(51, 102, 255, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(51, 102, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: default;
+            width: 100%;
+            max-width: 200px;
+            justify-content: center;
+        }
+
+        .feature-item:hover {
+            background: rgba(51, 102, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #3366ff, #4d79ff);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .feature-text {
+            color: white;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .map-directions-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: linear-gradient(135deg, #3366ff, #56ff4d);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            justify-self: center;
+        }
+
+        .map-directions-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .map-directions-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(51, 102, 255, 0.4);
+        }
+
+        .map-directions-btn:hover::before {
+            left: 100%;
+        }
+
+        .location-visual {
+            position: relative;
+            width: 100%;
+            max-width: 580px;
+        }
+
+        .map-container {
+            background: #333;
+            border-radius: 25px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(51, 102, 255, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            width: 100%;
+        }
+
+        .map-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+            border-color: rgba(51, 102, 255, 0.5);
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #333 0%, #444 100%);
+            color: #999;
+            font-size: 1.1rem;
+            position: relative;
+            cursor: default;
+            text-align: center;
+        }
+
+        .map-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #3366ff;
+            animation: mapPulse 2s ease-in-out infinite;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        @keyframes mapPulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        .map-overlay {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 0.8rem 1.2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .map-overlay-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .map-overlay-location {
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        .floating-location-cards {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-location-card {
+            position: absolute;
+            background: rgba(51, 102, 255, 0.9);
+            color: white;
+            padding: 0.8rem 1.2rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: floatCard 4s ease-in-out infinite;
+        }
+
+        .floating-location-card:nth-child(1) {
+            top: 20%;
+            right: 15%;
+            animation-delay: 0s;
+        }
+
+        .floating-location-card:nth-child(2) {
+            bottom: 25%;
+            left: 10%;
+            animation-delay: 2s;
+        }
+
+        @keyframes floatCard {
+            0%, 100% { transform: translateY(0px); opacity: 0.8; }
+            50% { transform: translateY(-10px); opacity: 1; }
+        }
+
+        /* About Section */
+        .about-section {
+            background: #1a1a1a;
+            padding: 80px 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+        }
+
+        .about-content {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .about-content p {
+            color: #999;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            justify-items: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .about-image {
+            background: #333;
+            border-radius: 15px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            width: 100%;
+        }
+
+        .about-image.large {
+            grid-row: span 2;
+            height: 410px;
+        }
+
+        .success-badge {
+            background: #f7df03;
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .success-percentage {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            background: #1a1a1a;
+            padding: 80px 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonials-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+        }
+
+        .testimonials-container h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            justify-items: center;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .testimonial-card {
+            background: #222;
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid #333;
+            text-align: center;
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .stars {
+            color: #ffd700;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-text {
+            color: #999;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #3366ff;
+        }
+
+        .author-info h4 {
+            color: white;
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section - KONTAK */
+        .contact-section {
+            background: #1a1a1a;
+            padding: 80px 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .contact-info {
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: #999;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: #f1dd07;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .contact-form {
+            background: #222;
+            padding: 2rem;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: white;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #333;
+            border-radius: 10px;
+            background: #1a1a1a;
+            color: white;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3366ff;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #333;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #f4b405;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            padding: 3rem 2rem 2rem;
+            border-top: 1px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+            justify-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer-section {
+            max-width: 300px;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            color: #999;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-container,
+            .services-container,
+            .about-container,
+            .contact-container,
+            .location-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .portfolio-grid,
+            .testimonials-grid,
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-images {
+                grid-template-columns: 1fr;
+            }
+            
+            .location-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .portfolio-item {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .portfolio-content {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .services-content h2,
+            .portfolio-container h2,
+            .location-header h2,
+            .about-content h2,
+            .testimonials-container h2,
+            .contact-info h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-content {
+                padding: 0 1rem;
+            }
+        }
+        .service-icon img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 12px; /* bisa disesuaikan, misalnya 8px, 16px */
+        }
+        .service-image img{
+            border-radius: 12px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-content">
+                <div class="logo">portofolioku</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Beranda</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#location">Lokasi</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <a href="#contact" class="cta-button">Mari Bicara</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1. BERANDA -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p style="color: #8b8a8a; margin-bottom: 1rem;">Fillah Fadhli Al-Jabbar</p>
+                <h1>Film makker<span class="highlight"> Cinematic </span></h1>
+                <p>Hai, aku Fadhli! Mahasiswa Ilmu Komunikasi di Universitas Muhammadiyah Sidoarjo yang punya passion besar di dunia visual storytelling. Aku suka menggambar, membaca, dan bikin film pendek yang terinspirasi dari novel, legenda, atau cerita rakyat. Lewat karya-karyaku sebagai content filmmaker & videografer, aku ingin menghidupkan kembali kisah-kisah klasik dengan sentuhan visual yang modern — biar anak muda makin tertarik membaca dan mengenal budaya lewat film. Selamat datang di dunia kreatifku, tempat literasi bertemu dengan visual. 🎬✨.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">Project</a>
+                    <a href="#location" class="btn-secondary">Alamat</a>
+                </div>
+                <div class="floating-card trusted-card">
+                    <div class="trusted-avatars">
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                    </div>
+                    <div style="color: white; font-weight: 600;">Dipercaya Klien</div>
+                    <div style="color: #999; font-size: 0.9rem;">200+</div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="main-image">
+                    <img src="pictures/Filmku.jpeg" alt="Custom Design Icon" style="width:450px; height:300px;"></div>
+                <div class="floating-card services-card">
+                    <div style="color: white; font-weight: 600; margin-bottom: 0.5rem;">Keahlian</div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span>📸</span>
+                        <span style="color: #999; font-size: 0.9rem;">photography</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span>📹</span>
+                        <span style="color: #999; font-size: 0.9rem;">Vidiography</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. LAYANAN -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <div class="services-content">
+                <h2>Layanan <br>Kami</h2>
+                <p>Kami menyediakan berbagai layanan  tinggi untuk memenuhi kebutuhan residential dan komersial.</p>
+                <div class="services-grid">
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="pictures/3.jpg" alt="Webbing Icon" style="width:50px; height:50px;">
+        </div>
+        <h3>Webbing</h3>
+        <p>Koleksi rotan webbing dengan kualitas bagus dan dapat di-custom sesuai bentuk yang diinginkan.</p>
+    </div>
+
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="pictures/2.avif" alt="Core Icon" style="width:50px; height:50px;">
+        </div>
+        <h3>Core</h3>
+        <p>Barang dengan ukuran yang tersedia mulai dari 1mm hingga ukuran 10 dengan kualitas yang bagus.</p>
+    </div>
+
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="pictures/6.jpg" alt="Anyaman Icon" style="width:50px; height:50px;">
+        </div>
+        <h3>Anyaman</h3>
+        <p>Dianyam dengan penganyam yang handal sehingga menghasilkan barang yang menarik dan enak dipandang.</p>
+    </div>
+
+    <div class="service-item">
+        <div class="service-icon">
+            <img src="pictures/4.jpg" alt="Custom Design Icon" style="width:50px; height:50px;">
+        </div>
+        <h3>Custom Design</h3>
+        <p>Layanan desain khusus sesuai kebutuhan dengan konsultasi gratis.</p>
+    </div>
+</div>
+
+            </div>
+            <div class="services-image">
+                <div class="laptop-mockup"><img src="pictures/Filmku.jpeg" alt="Custom Design Icon" style="width:500px; height:250px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PRODUK -->
+    <section id="products" class="portfolio-section">
+        <div class="portfolio-container">
+            <p style="color: #999; margin-bottom: 1rem;">Apa yang kami tawarkan</p>
+            <h2>Produk Unggulan <br>PORTOFOLIO KU</h2>
+            <p>Koleksi terbaik furniture rotan kami yang telah dipercaya oleh berbagai klien untuk kebutuhan residential dan komersial.</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-tag">Webbing & Custom</div>
+                        <h3 class="portfolio-title">Square Mesh Webbing</h3>
+                        <p class="portfolio-description">Square Mesh Webbing dengan bahan ukuran 2,5mm dan bisa customisasi untuk ukuran bahan, panjang, lebar.</p>
+                    </div>
+                    <div class="portfolio-image"><img src="pictures/3.jpg" alt="Custom Design Icon" style="width:155px; height:185px;"></div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-tag">Webbing & Custom</div>
+                        <h3 class="portfolio-title">Open Webbing</h3>
+                        <p class="portfolio-description">Open Webbing dengan bahan ukuran 2,5mm dan bisa customisasi untuk ukuran bahan, panjang, lebar.</p>
+                    </div>
+                    <div class="portfolio-image"><img src="pictures/4.jpg" alt="Custom Design Icon" style="width:155px; height:185px;"></div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-tag">Core & Custom</div>
+                        <h3 class="portfolio-title">Core</h3>
+                        <p class="portfolio-description">Core(Inti Rotan) bisa customisasi untuk ukuran bahan, panjang, lebar..</p>
+                    </div>
+                    <div class="portfolio-image"><img src="pictures/2.avif" alt="Custom Design Icon" style="width:155px; height:185px;"></div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <div class="portfolio-tag">Anyaman & Custom</div>
+                        <h3 class="portfolio-title">Ajiro</h3>
+                        <p class="portfolio-description">Ajiro dengan bahan ukuran 2,5mm dan bisa customisasi untuk ukuran bahan, panjang, lebar. </p>
+                    </div>
+                    <div class="portfolio-image"><img src="pictures/6.jpg" alt="Custom Design Icon" style="width:155px; height:185px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 4. LOKASI -->
+<section id="location" class="location-section">
+    <div class="location-container">
+        <div class="location-header">
+            <p style="color: #999; margin-bottom: 1rem;">Temukan Kami</p>
+            <h2>📍 Lokasi Perusahaan</h2>
+            <p>Kunjungi workshop dan showroom kami untuk melihat langsung kualitas furniture rotan terbaik Indonesia</p>
+        </div>
+        
+        <div class="location-content">
+            <div class="location-info">
+                <div class="location-badge">
+                    <span>📍</span>
+                    Workshop & Showroom
+                </div>
+                
+                <h3 class="location-title">portofolioku</h3>
+                
+                <div class="address-card">
+                    <div class="address-main">HJC2+27M, Wonokalang</div>
+                    <div class="address-detail">
+                        Kecamatan Wonoayu<br>
+                        Kabupaten Sidoarjo, Jawa Timur 61262<br>
+                        Indonesia
+                    </div>
+                </div>
+                
+                <div class="location-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🏭</div>
+                        <div class="feature-text">Workshop Produksi</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🪑</div>
+                        <div class="feature-text">Showroom Display</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚗</div>
+                        <div class="feature-text">Akses Mudah</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👥</div>
+                        <div class="feature-text">Konsultasi Gratis</div>
+                    </div>
+                </div>
+                
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=HJC2%2B27M%2C%20Semambung%2C%20Wonoayu%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061262" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="map-directions-btn">
+                    <span>🗺️</span>
+                    Buka di Google Maps
+                </a>
+            </div>
+            
+            <div class="location-visual">
+                <div class="map-container">
+                    <!-- Ganti placeholder dengan Google Maps Embed -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.870624389094!2d112.65729987499778!3d-7.422223973624533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa23f5a03a0d%3A0x8fbb1bbcc28a4d!2sWonokalang%2C%20Wonoayu%2C%20Sidoarjo%2C%20Jawa%20Timur%2061262!5e0!3m2!1sen!2sid!4v1694098370000!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 1rem;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    <!-- Tetap simpan overlay & floating cards jika mau -->
+                    <div class="map-overlay">
+                        <div class="map-overlay-title">PORTOFOLIO KU</div>
+                        <div class="map-overlay-location">Semambung, Wonoayu</div>
+                    </div>
+                    
+                    <div class="floating-location-cards">
+                        <div class="floating-location-card">Workshop 🏭</div>
+                        <div class="floating-location-card">Showroom 🪑</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 5. TENTANG -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <p style="color: #999; margin-bottom: 1rem;">Siapa Kami</p>
+                <h2>Pengrajin Rotan <br>Profesional dan <br>Terpercaya</h2>
+                <p>Sejak tahun 2010, UD portofolioku telah menjadi pionir dalam industri furniture rotan Indonesia dengan komitmen terhadap kualitas dan keberlanjutan lingkungan.</p>
+                <p>Tim pengrajin berpengalaman kami menciptakan setiap produk dengan keahlian tinggi, menggunakan bahan rotan pilihan yang dipanen secara bertanggung jawab.</p>
+                <p>Dengan pengalaman lebih dari 15 tahun, kami telah melayani 200+ klien dengan tingkat kepuasan 99% dan terus berinovasi untuk memberikan produk terbaik.</p>
+                <a href="#contact" class="btn-primary">Mari Bekerja Sama</a>
+            </div>
+            <div class="about-images">
+                <div class="about-image">🏭</div>
+                <div class="about-image large">👥</div>
+                <div class="about-image">🌿</div>
+                <div class="success-badge">
+                    <div class="success-percentage">99%</div>
+                    <div>Kepuasan Klien</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (bagian dari Tentang) -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <p style="color: #999; margin-bottom: 1rem;">Apa kata mereka tentang</p>
+            <h2>Layanan Kami</h2>
+            <p>Kepuasan klien adalah prioritas utama kami. Berikut testimoni dari berbagai klien yang telah mempercayai produk furniture rotan kami.</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">Perusahaan yang sangat profesional dengan pelayanan ramah, Fillah Fadhli Al-Jabbar tinggi dan proses pengerjaan yang tepat waktu.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Sari Indrawati</h4>
+                            <p>Desainer Interior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">Tim yang sangat berpengalaman dan handal. Furniture rotan custom yang dibuat sesuai dengan kebutuhan dan ekspektasi kami.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Ahmad Rahman</h4>
+                            <p>Pemilik Resort</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. KONTAK -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Hubungi Kami</h2>
+                <p style="color: #999; margin-bottom: 2rem;">Siap membantu mewujudkan furniture rotan impian Anda. Hubungi kami untuk konsultasi gratis dan penawaran terbaik.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <div style="color: white; font-weight: 600;">Telepon</div>
+                        <div>(+62) 812 174 948 01</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <div style="color: white; font-weight: 600;">Email</div>
+                        <div>sarotansidoarjo@gmail.com</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <div style="color: white; font-weight: 600;">Alamat</div>
+                        <div>HJC2+27M, Wonokalang, Wonoayu<br>Kabupaten Sidoarjo, Jawa Timur 61262</div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">💬</a>
+                    <a href="#" class="social-link">🐦</a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3 style="color: white; margin-bottom: 1.5rem;">Kirim Pesan</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" placeholder="Ceritakan kebutuhan furniture rotan Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="width: 100%; max-width: 1400px; margin: 0 auto;">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>PORTOFOLIO KU</h3>
+                    <p style="color: #999; margin-bottom: 1rem;">Menghadirkan keindahan alami rotan Indonesia dalam setiap produk furniture berkualitas tinggi.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">💬</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Beranda</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#location">Lokasi</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tentang</h3>
+                    <ul>
+                        <li><a href="#services">Layanan Kami</a></li>
+                        <li><a href="#products">Produk Unggulan</a></li>
+                        <li><a href="#location">Lokasi Kami</a></li>
+                        <li><a href="#about">Tim Kami</a></li>
+                        <li><a href="#contact">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><a href="tel:+6281217494801">(+62) 812 174 948 01</a></li>
+                        <li><a href="mailto:sarotansidoarjo@gmail.com">sarotansidoarjo@gmail.com</a></li>
+                        <li>HJC2+27M, Wonokalang<br>Wonoayu, Sidoarjo 61262</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PORTOFOLIO KU. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Form submission with WhatsApp integration
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const message = formData.get('message');
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Halo portofolioku,
+
+Saya ${name} ingin menanyakan tentang furniture rotan.
+
+📧 Email: ${email}
+📞 Telepon: ${phone || 'Tidak disediakan'}
+
+💬 Pesan:
+${message}
+
+Terima kasih!`;
+            
+            // Encode message for WhatsApp URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappURL = `https://wa.me/6281217494801?text=${encodedMessage}`;
+            
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            alert('Terima kasih! Anda akan diarahkan ke WhatsApp untuk melanjutkan percakapan.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(26, 26, 26, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#1a1a1a';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Add animation styles and observe elements
+        document.querySelectorAll('.service-item, .portfolio-item, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle (if needed)
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('show');
+            });
+        }
+    </script>
+</body>
+
+<!-- Mirrored from sarotansidoarjo.com/welcome.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Nov 2025 13:16:30 GMT -->
+</html>
